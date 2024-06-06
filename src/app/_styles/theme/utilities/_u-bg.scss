@@ -1,0 +1,9 @@
+@use "../tokens/t-colors" as *;
+
+.bg-white {
+  background-color: $gray-0;
+}
+
+.bg-primary-high {
+  background-color: $bg-primary-high;
+}

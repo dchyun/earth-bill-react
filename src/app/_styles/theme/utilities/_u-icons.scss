@@ -1,0 +1,37 @@
+@use "../tokens/t-colors" as *;
+@use "../tokens/t-iconography" as *;
+
+// Size
+.icon-size-sm {
+  height: $icon-size-sm;
+}
+
+.icon-size-md {
+  height: $icon-size-md;
+}
+
+.icon-size-lg {
+  height: $icon-size-lg;
+}
+
+.icon-size-display {
+  height: $icon-size-display;
+}
+
+// Fill
+.icon-fill-white {
+  fill: $gray-0;
+}
+
+.icon-fill-black {
+  fill: $gray-1000;
+}
+
+// Stroke
+.icon-stroke-white {
+  stroke: $gray-0;
+}
+
+.icon-stroke-black {
+  stroke: $gray-1000;
+}
