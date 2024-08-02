@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Button from "./_components/Button";
+import Button from "../../_components/Button";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <div className='container'>
@@ -9,9 +9,7 @@ export default function Home() {
           <div className='col'>
             <h1>Hello World</h1>
             <Button>Example component</Button>
-            <Link href='/events'>Events</Link>
-            <Link href='/learn'>Learn</Link>
-            <Link href='/network'>Network</Link>
+            <Link href='/'>Home</Link>
           </div>
         </div>
       </div>
