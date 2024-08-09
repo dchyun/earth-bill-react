@@ -1,7 +1,9 @@
 // Colors
+$blue-100: #c2d3ff;
+$blue-400: #25469b;
+$blue-500: #1b3880;
 
 // Global
-$blue-500:    #0d6efd;
 $indigo-500:  #6610f2;
 $purple-500:  #6f42c1;
 $pink-500:    #d63384;
@@ -13,7 +15,7 @@ $teal-500:    #20c997;
 $cyan-500:    #0dcaf0;
 
 $gray-0:   #fff;
-$gray-100: #f8f9fa;
+$gray-100: #f9fbfc;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
@@ -36,3 +38,4 @@ $body-color: $text-neutral-high;
 // Backgrounds
 $bg-primary-high: $blue-500;
 $bg-neutral-lowest: $gray-0;
+$bg-neutral-high: $gray-1000;

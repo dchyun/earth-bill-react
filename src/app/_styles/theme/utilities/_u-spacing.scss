@@ -1,0 +1,26 @@
+@use "../tokens/t-spacing" as *;
+
+// Row Spacings
+.rt-sm {
+  padding-top: $spacer-5;
+}
+
+.rb-sm {
+  padding-bottom: $spacer-5;
+}
+
+.rt-md {
+  padding-top: $spacer-6;
+}
+
+.rb-md {
+  padding-bottom: $spacer-6;
+}
+
+.rt-lg {
+  padding-top: $spacer-8;
+}
+
+.rb-lg {
+  padding-bottom: $spacer-8;
+}

@@ -1,0 +1,48 @@
+// @use "../../_styles/foundation/variables" as *;
+@use "../../_styles/theme/_theme-variables" as *;
+
+.btn-pill,
+.btn-pill-light {
+  display: inline-block;
+  border-radius: $border-radius-xl;
+  padding: $spacer-3 $spacer-7;
+  font-size: $h6-font-size;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: $animation-duration-1 $animation-easing-ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: auto;
+    text-decoration: none;
+  }
+}
+
+.btn-pill {
+  background-color: $bg-primary-high;
+  color: $text-neutral-lowest;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-primary-high;
+    color: $text-neutral-lowest;
+  }
+}
+
+.btn-pill-light {
+  background-color: $gray-100;
+  color: $text-primary-xhigh;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-100;
+    color: $text-primary-xhigh;
+  }
+}
+
+.btn-link {
+  font-weight: 600;
+  color: $text-primary-xhigh;
+  text-decoration: underline;
+}

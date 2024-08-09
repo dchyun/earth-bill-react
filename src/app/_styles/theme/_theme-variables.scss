@@ -1,9 +1,44 @@
 @use "../foundation/variables" as *;
 
-@import "./tokens/t-animation";
-@import "./tokens/t-borders";
-@import "./tokens/t-colors";
-@import "./tokens/t-grid";
-@import "./tokens/t-iconography";
-@import "./tokens/t-spacing";
-@import "./tokens/t-typography";
+// Typography
+$font-family-base: 'Nunito Sans', sans-serif;
+
+$font-size-root: 62.5%;
+$font-size-base: 1.8rem;
+
+$font-size-xs: 1.4rem;
+$font-size-sm: 1.6rem;
+$font-size-lg: 2rem;
+$font-size-xl: 2.2rem;
+
+$h1-font-size: 6.4rem;
+$h2-font-size: 4.8rem;
+$h3-font-size: 3.2rem;
+$h4-font-size: 2.4rem;
+$h5-font-size: 2rem;
+$h6-font-size: 1.8rem;
+
+$headings-margin-bottom: .5em;
+$headings-font-family: 'Roboto', sans-serif;
+$headings-font-weight: 700;
+
+$font-url: "https://fonts.googleapis.com/css2?";
+
+// Grid
+$gutter: 5vw;
+$gutters: (
+  sm: $gutter,
+  md: 8vw,
+  lg: 10vw,
+  xl: 10vw
+);
+
+
+
+@forward "./tokens/t-animation";
+@forward "./tokens/t-borders";
+@forward "./tokens/t-colors";
+@forward "./tokens/t-grid";
+@forward "./tokens/t-iconography";
+@forward "./tokens/t-spacing";
+@forward "./tokens/t-typography";

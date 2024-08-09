@@ -1,0 +1,19 @@
+@use "../../_styles/foundation/variables" as *;
+@use "../../_styles/theme/_theme-variables" as *;
+
+.section-footer {
+  &__item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      padding-right: $spacer-4;
+    }
+  }
+
+  img {
+    height: 6rem;
+  }
+}

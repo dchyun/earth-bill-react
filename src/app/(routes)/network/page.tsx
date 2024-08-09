@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../../_components/Button";
+import Button from "../../_components/button/button.component";
 
 export default function Page() {
   return (
@@ -8,7 +8,7 @@ export default function Page() {
         <div className='row'>
           <div className='col'>
             <h1>Hello World</h1>
-            <Button>Example component</Button>
+            <Button type='primary' link='#'>Example component</Button>
             <Link href='/'>Home</Link>
           </div>
         </div>

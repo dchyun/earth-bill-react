@@ -1,5 +1,6 @@
 @use "../tokens/t-colors" as *;
 @use "../tokens/t-typography" as *;
+@use "../tokens/t-spacing" as *;
 
 // Text Sizes
 .text-xs {
@@ -37,7 +38,7 @@
 
 // Fonts
 .font-base {
-  font-family: 'Open Sans', Opensans-Regular !important;
+  font-family: $font-family-base;
 }
 
 // Font Weight
@@ -50,7 +51,7 @@
 }
 
 .font-weight-bold {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 // Lists
@@ -65,7 +66,21 @@ li:not(:last-child) {
   margin-bottom: .25em;
 }
 
+ul li:not(:last-of-type),
+ol li:not(:last-of-type) {
+  margin-bottom: $spacer-2;
+}
+
 // Text Spacing
 .mt-content {
   margin-top: 1.15em;
+}
+
+// Blockquote
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
 }

@@ -1,0 +1,125 @@
+@use "../../_styles/foundation/variables" as *;
+@use "../../_styles/theme/_theme-variables" as *;
+
+/* General */
+.header-wrapper {
+  background-color: transparent;
+}
+
+// Desktop Menun
+
+.header {
+  .header__nav-item {
+    display: none;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      display: flex;
+    }
+  }
+}
+
+.header__nav-items {
+  li {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Nav Items */
+
+.header__nav-item {
+  font-size: $font-size-sm;
+  color: $text-neutral-lowest;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+    width: 110%;
+    height: 3px;
+    background-color: $bg-neutral-lowest;
+    border-radius: $border-radius-xxs;
+    opacity: 0;
+    transition: all $animation-duration-1 $animation-easing-ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: $text-neutral-lowest;
+    text-decoration: none;
+
+    &::before {
+      opacity: .4;
+    }
+  }
+
+  &.active {
+    &::before,
+    &:hover::before,
+    &:focus::before {
+      opacity: 1;
+    }
+  }
+}
+
+.header img {
+  height: 6rem;
+}
+
+/* Hamburger Menu */
+.btn-hamburger {
+  background-color: transparent;
+  border: 1px solid $text-neutral-lowest;
+  border-radius: $border-radius-xxs;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacer-1;
+
+  svg {
+    fill: $text-neutral-lowest;
+    height: 2rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $text-neutral-lowest;
+    color: $text-primary-xhigh;
+
+    svg {
+      fill: $text-primary-xhigh;
+    }
+  }
+}
+
+.btn-hamburger:hover, .header .btn-hamburger.open {
+  color: $text-neutral-high;
+  background-color: $text-neutral-lowest;
+}
+
+.hamburger-menu {
+  height: 100vh;
+  width: 20rem;
+  background-color: $bg-primary-high;
+  display: none;
+  position: absolute;
+  right: 0;
+
+  a {
+    color: $text-neutral-lowest;
+  }
+
+  &.open {
+    display: flex;
+  }
+
+  .header__nav-item {
+    display: block;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      display: none;
+    }
+  }
+}
