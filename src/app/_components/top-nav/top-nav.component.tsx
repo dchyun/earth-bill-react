@@ -18,8 +18,6 @@ export default function TopNav({
     setMobileMenuOpen(!mobileMenuOpen);
   }
 
-  const mobileMenuClass = mobileMenuOpen ? 'open' : '';
-
   return (
     <div className="w-100 sticky-top header-wrapper">
       <div className="row header bg-primary-high text-white m-0 py-3 px-4">
@@ -47,7 +45,7 @@ export default function TopNav({
           </button>
         </div>
       </div>
-      <div className={"hamburger-menu flex-column align-items-start ml-auto p-4 " + mobileMenuClass} aria-labelledby="dropdownMenuButton">
+      <div className={"hamburger-menu flex-column align-items-start ml-auto p-4 " + (mobileMenuOpen ? 'open' : '')} aria-labelledby="dropdownMenuButton">
         <ul className='list-unstyled'>
           {children.map((menuItem: TopNavMenuItemProps) => {
             if (!menuItem.mobileHidden) {

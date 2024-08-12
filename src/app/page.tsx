@@ -19,8 +19,22 @@ export default function Page() {
       </TopNav>
       <Section backgroundColor="black" textColor="white">
         <Row paddingTop='sm' paddingBottom='sm'>
-          <Column baseWidth={12} desktopWidth={4} className="pb-4 pb-md-0 d-flex align-items-centered justify-content-center">
+          <Column baseWidth={12} desktopWidth={6} className="pb-4 pb-md-0 d-flex align-items-centered justify-content-center">
             <img style={{maxHeight: '400px', maxWidth: '100%'}} src={'/earth.jpg'} alt=''/>
+          </Column>
+          <Column baseWidth={12} desktopWidth={6}>
+            <h1 className="text-uppercase">The Earth Bill</h1>
+            <h2 className="h3 text-uppercase mb-5">A 2030 Moonshot for Earth</h2>
+            <h4 className="h3 mb-4">100% by 2030</h4>
+            <ol className="h3 mb-4">
+              <li className="mb-4">Renewable Energy</li>
+              <li className="mb-4">Zero-Emission Vehicles</li>
+              <li>Regenerative Agriculture</li>
+            </ol>
+            <span className="h4 mb-5 d-block">Enforcement tied to Ordinary Business Deductions.</span>
+            <div className="d-flex d-lg-inline-block align-items-center justify-content-center">
+              <a className="btn btn-pill-light" href="https://docs.google.com/forms/d/e/1FAIpQLScH6iofOSTf6n9GJXjhhz-PJ9kwkeLvNPO6yuPV7UtDvYy2ZA/viewform">Endorse The Earth Bill</a>
+            </div>
           </Column>
         </Row>
       </Section>

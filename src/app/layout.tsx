@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import "./_styles/theme/theme.scss";
+import { PreloadResources } from "./preload-resources";
 
 export const metadata: Metadata = {
-  title: "React Starter App",
-  description: "React starter app with Next.JS and a small design system structure",
+  title: {
+    template: '%s | The Earth Bill',
+    default: 'The Earth Bill',
+  },
+  keywords: "climate, climate change, green new deal, public policy, enviornment, green",
+  authors: [{name: "350 NYC"}],
 };
 
 export default function RootLayout({
@@ -13,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <PreloadResources/>
       <body>{children}</body>
     </html>
   );
