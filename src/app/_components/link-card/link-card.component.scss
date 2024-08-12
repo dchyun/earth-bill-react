@@ -1,0 +1,25 @@
+@use "../../_styles/theme/_theme-variables" as *;
+
+.link-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-primary-xhigh;
+  background-color: $gray-100;
+  padding: $spacer-5 $spacer-7;
+  border: 2px solid transparent;
+  border-radius: $border-radius-xxs;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .25);
+  font-size: $h4-font-size;
+  font-weight: 600;
+  transition: 0.15s ease-in-out;
+  text-decoration: none;
+
+  &:hover,
+  &:Focus {
+    text-decoration: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, .35);
+    outline: none;
+  }
+}

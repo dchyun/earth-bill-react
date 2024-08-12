@@ -1,7 +1,7 @@
 type ColumnProps = {
   children: any,
   className?: string,
-  baseWidth: number,
+  baseWidth?: number,
   tabletWidth?: number,
   desktopWidth?: number,
 }

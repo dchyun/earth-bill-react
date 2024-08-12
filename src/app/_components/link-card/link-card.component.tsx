@@ -1,25 +1,25 @@
 import { forwardRef } from "react";
-import './button.component.scss';
+import './link-card.component.scss';
 
-type ButtonProps = {
+type LinkCardProps = {
   children: any,
   className?: string,
-  type: 'primary' | 'light',
   href?: string,
   target?: '_self' | '_blank' | '_parent' | '_top',
   srOnlyCopy?: string,
+  height?: '100' | 'auto',
 }
 
-const Button = forwardRef(({
+const LinkCard = forwardRef(({
   children,
   className,
-  type,
   href,
   target,
   srOnlyCopy,
-}: ButtonProps, ref: any) => {
+  height,
+}: LinkCardProps, ref: any) => {
   return (
-    <a className={(type === 'light' ? 'btn-pill-light ' : 'btn-pill ') + (className ? className : '')} ref={ref} href={href} target={target}>
+    <a className={'link-card ' + (height === '100' ? 'h-100 ' : '') + (className ? className : '')} ref={ref} href={href} target={target}>
       {children}
       {srOnlyCopy && <span className='sr-only'>{srOnlyCopy}</span>}
       {target === '_blank' && <span className='sr-only'>opens in a new window</span>}
@@ -27,4 +27,4 @@ const Button = forwardRef(({
   )
 })
 
-export default Button
+export default LinkCard
