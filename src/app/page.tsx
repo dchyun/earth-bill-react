@@ -7,6 +7,7 @@ import Row from "./_components/row/row.component";
 import Column from "./_components/column/column.component";
 import LinkCard from "./_components/link-card/link-card.component";
 import { TopNavMenuItem } from "./_components/top-nav/top-nav.component";
+import OrganizationsTable from "./_components/organizations-table/organizations-table.component";
 
 export default function Page() {
   return (
@@ -101,10 +102,11 @@ export default function Page() {
           <Column>
             <h2 className="h3 mb-3 text-uppercase">Pledge Groups & Citizens:</h2>
             <h4 className="mb-3">
-              <Link className="link-primary" href="https://docs.google.com/document/d/1XEAeKQsKWqrzpYTeKLHOniJoi32s1mwuBWxp6mDNSZY/edit?usp=sharing" target="_blank">See al of our Groups & Earth Activists<span className="sr-only">opens in a new window</span></Link>
+              <Link className="link-primary" href="https://docs.google.com/document/d/1XEAeKQsKWqrzpYTeKLHOniJoi32s1mwuBWxp6mDNSZY/edit?usp=sharing" target="_blank">See all of our Groups & Earth Activists<span className="sr-only">opens in a new window</span></Link>
             </h4>
             <p className="text-lg mb-5">Thank you! Your leadership drives us all.</p>
             <h3 className="h4 mb-4 text-uppercase">Name of Organization</h3>
+            <OrganizationsTable></OrganizationsTable>
           </Column>
         </Row>
       </Section>
