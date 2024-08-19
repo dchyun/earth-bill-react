@@ -1,0 +1,18 @@
+@use "../../_styles/foundation/variables" as *;
+@use "../../_styles/theme/_theme-variables" as *;
+
+.logo-grid {
+  display: grid;
+  grid-gap: $spacer-3;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+  &__logo {
+    width: 100%;
+
+    &.logo__script {
+      grid-column-end: span 2;
+    }
+  }
+}

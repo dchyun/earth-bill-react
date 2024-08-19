@@ -8,6 +8,8 @@ import Column from "./_components/column/column.component";
 import LinkCard from "./_components/link-card/link-card.component";
 import { TopNavMenuItem } from "./_components/top-nav/top-nav.component";
 import OrganizationsTable from "./_components/organizations-table/organizations-table.component";
+import { LogoGridItem } from "./_components/logo-grid/logo-grid.component";
+import LogoGrid from "./_components/logo-grid/logo-grid.component";
 
 export default function Page() {
   return (
@@ -106,7 +108,70 @@ export default function Page() {
             </h4>
             <p className="text-lg mb-5">Thank you! Your leadership drives us all.</p>
             <h3 className="h4 mb-4 text-uppercase">Name of Organization</h3>
-            <OrganizationsTable></OrganizationsTable>
+            <OrganizationsTable className="mb-5"></OrganizationsTable>
+            <LogoGrid className="mb-2">
+              <LogoGridItem src={"/org_logos/fridays-for-future-nyc.jpg"}>Fridays for Future NYC</LogoGridItem>
+              <LogoGridItem src={"/org_logos/350_bk.png"}>350 Brooklyn</LogoGridItem>
+              <LogoGridItem src={"/org_logos/350Chicago.jpg"}>350 Chicago</LogoGridItem>
+              <LogoGridItem src={"/org_logos/350Kishwaukee.jpg"}>350 Kishwaukee</LogoGridItem>
+              <LogoGridItem src={"/org_logos/350Salem.jpg"}>350 Salem Oregon</LogoGridItem>
+              <LogoGridItem src={"/org_logos/AdvancedOrganics.png"}>Advanced Organics</LogoGridItem>
+              <LogoGridItem src={"/org_logos/laudato.jpg"} logoType="script">Laudato Si' Movement</LogoGridItem>
+              <LogoGridItem src={"/org_logos/aytzim_logo.jpg"} logoType="script">Aytzim Ecological Judaism</LogoGridItem>
+              <LogoGridItem src={"/org_logos/BergenCountyGreenParty.jpg"}>Bergen Country NJ Green Party</LogoGridItem>
+              <LogoGridItem src={"/org_logos/brushwood.png"}>Brushwood Center</LogoGridItem>
+              <LogoGridItem src={"/org_logos/CharlestonClimateCoalition.png"}>Charleston Climate Coalition</LogoGridItem>
+              <LogoGridItem src={"/org_logos/ccan.png"}>Chesapeake Climate Action Network</LogoGridItem>
+              <LogoGridItem src={"org_logos/church-of-the-village.png"} logoType="script">Church of the Village</LogoGridItem>
+              <LogoGridItem src={"org_logos/circle-pines.jpg"} logoType="script">Circle Pines</LogoGridItem>
+              <LogoGridItem src={"/org_logos/CleanEnergyAction.jpg"}>Clean Energy Action</LogoGridItem>
+              <LogoGridItem src={"/org_logos/CCP.JPG"}>Climate crisis policy</LogoGridItem>
+              <LogoGridItem src={"/org_logos/ClimatePsychologyAlliance.jpg"}>Climate Psycology Alliance North America</LogoGridItem>
+              <LogoGridItem src={"org_logos/CoalitiontoProtectNY.jpg"} logoType="script">Coalition to protect New York</LogoGridItem>
+              <LogoGridItem src={"/org_logos/earthday.jpeg"}>earthday.org</LogoGridItem>
+              <LogoGridItem src={"org_logos/ee-ea-logo-2020-v2.jpg"} logoType="script">Earth Etics Inc.</LogoGridItem>
+              <LogoGridItem src={"/org_logos/EcoEthicsGlobal.jpg"}>EcoEthics Global</LogoGridItem>
+              <LogoGridItem src={"/org_logos/EcumenicalMinistriesofOregon.jpg"}>Ecumenical Ministries of Oregon</LogoGridItem>
+              <LogoGridItem src={"/org_logos/EldersClimateActionNorCal.png"}>Elders Climate Action Northern California</LogoGridItem>
+              <LogoGridItem src={"/org_logos/EldersClimateActionSoCal.jpg"}>Elders Climate Action Southern California</LogoGridItem>
+              <LogoGridItem src={"/org_logos/EmpowerOurFuture.jpg"}>Empower our future</LogoGridItem>
+              <LogoGridItem src={"org_logos/EnvironmentMatters.jpg"} logoType="script">Enviornment Matters</LogoGridItem>
+              <LogoGridItem src={"/org_logos/FoxValleyCitizensforPeace.jpg"}>Fox Valley Citizens for Peace</LogoGridItem>
+              <LogoGridItem src={"/org_logos/fridays-for-future-usa.png"}>Firdays for Future USA</LogoGridItem>
+              <LogoGridItem src={"org_logos/FranciscanActionNetwork.jpg"} logoType="script">Franciscan Action Network</LogoGridItem>
+              <LogoGridItem src={"org_logos/Green-Team-Academy.png"} logoType="script">Green Tea Academy</LogoGridItem>
+              <LogoGridItem src={"/org_logos/GulfCoastCreationCare.jpg"}>Gulf Coast Creation Care</LogoGridItem>
+              <LogoGridItem src={"/org_logos/Hazon-Logo.gif"}>Hazon</LogoGridItem>
+              <LogoGridItem src={"/org_logos/Hempbest.jpg"}>Hempbest</LogoGridItem>
+              <LogoGridItem src={"/org_logos/imac.jpeg"}>Interfaith Moral Acttion and Climate</LogoGridItem>
+              <LogoGridItem src={"/org_logos/ItsEasyBeingGreen.jpg"}>It's east being green</LogoGridItem>
+              <LogoGridItem src={"/org_logos/LogoCMYK_InterfaithPublicHealthNetwork.jpg"}>Interfaith Public Health Network</LogoGridItem>
+              <LogoGridItem src={"org_logos/JeffersonCountFarmersNeighbors.jpg"} logoType="script">Jefferson County Farmers & Neighbors</LogoGridItem>
+              <LogoGridItem src={"/org_logos/Madhvi4EcoEthics.png"}>Madhvi 4 EcoEthics</LogoGridItem>
+              <LogoGridItem src={"org_logos/Metro-Catholic-Logo.jpg"} logoType="script">Metro New York Catholic Climate Movement</LogoGridItem>
+              <LogoGridItem src={"/org_logos/mission-itspossible.png"}>Mission It's Possible</LogoGridItem>
+              <LogoGridItem src={"org_logos/MovementRights.jpg"} logoType="script">Movement Rights</LogoGridItem>
+              <LogoGridItem src={"/org_logos/NewMilfordHelpingHandsforHeros.jpg"}>New Milford Helping Hands for Heroes</LogoGridItem>
+              <LogoGridItem src={"org_logos/NYPAN.png"} logoType="script">NYPAN</LogoGridItem>
+              <LogoGridItem src={"/org_logos/OccupyBergenCounty.jpg"}>Occupy Bergen County</LogoGridItem>
+              <LogoGridItem src={"/org_logos/oceanicGlobal.png"}>Oceanic Global</LogoGridItem>
+              <LogoGridItem src={"/org_logos/olympic_climate_action.png"}>Olympic Climate Action</LogoGridItem>
+              <LogoGridItem src={"/org_logos/PeopleHealthyEnvironment.jpg"}>People Healthy Enviornment</LogoGridItem>
+              <LogoGridItem src={"org_logos/Regenintel.png"} logoType="script">RegenIntel</LogoGridItem>
+              <LogoGridItem src={"/org_logos/RCC.jpeg"}>Resouces for the concerned citizen</LogoGridItem>
+              <LogoGridItem src={"org_logos/RiversideChurch.jpg"} logoType="script">Riverside Church</LogoGridItem>
+              <LogoGridItem src={"/org_logos/san_luis_valley_lfc.jpeg"}>San Luis Valley Local Food Coalition</LogoGridItem>
+              <LogoGridItem src={"org_logos/SantaCruzClimateActionNetwork.jpg"} logoType="script">Santa Cruz Climate Action Network</LogoGridItem>
+              <LogoGridItem src={"org_logos/sustainableMillValley_script.png"} logoType="script">Sustainable Mill Valley</LogoGridItem>
+              <LogoGridItem src={"/org_logos/TerraAdvocati.jpg"}>Terra Advocati</LogoGridItem>
+              <LogoGridItem src={"/org_logos/think_zero.png"}>Think Zero</LogoGridItem>
+              <LogoGridItem src={"/org_logos/thomas-berry-logo-ancillary.jpg"}>Thomas Berry Fourum</LogoGridItem>
+              <LogoGridItem src={"org_logos/UUJEC.jpg"} logoType="script">Unitarian Universalists for a Just Economic Community</LogoGridItem>
+              <LogoGridItem src={"org_logos/UUM_script.png"} logoType="script">Unitarian Universalists Ministry for Earth</LogoGridItem>
+              <LogoGridItem src={"org_logos/UUSJ_script.jpg"} logoType="script">Unitarian Universalits for Social Justics</LogoGridItem>
+              <LogoGridItem src={"/org_logos/WESPAC.jpeg"}>WESPAC Foundation</LogoGridItem>
+              <LogoGridItem src={"/org_logos/WorkingFamiliesJoliet.jpg"} logoType="script">Working Families Joliet</LogoGridItem>
+            </LogoGrid>
           </Column>
         </Row>
       </Section>

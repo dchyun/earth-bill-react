@@ -77,6 +77,20 @@
         }
       }
     }
+
+    &.desktop-hidden {
+      @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+        display: none;
+      }
+    }
+
+    &.mobile-hidden {
+      display: none;
+
+      @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+        display: block;
+      }
+    }
   }
 
   .btn-hamburger {
