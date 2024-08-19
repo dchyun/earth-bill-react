@@ -7,7 +7,7 @@ import Row from "./_components/shared/row/row.component";
 import Column from "./_components/shared/column/column.component";
 import LinkCard from "./_components/shared/link-card/link-card.component";
 import { TopNavMenuItem } from "./_components/shared/top-nav/top-nav.component";
-import OrganizationsTable from "./_components/data-bound/organizations-table/organizations-table.component";
+import OrganizationsGrid from "./_components/data-bound/organizations-grid/organizations-grid.component";
 import { LogoGridItem } from "./_components/shared/logo-grid/logo-grid.component";
 import LogoGrid from "./_components/shared/logo-grid/logo-grid.component";
 import CitizensTable from "./_components/data-bound/citizens-table/citizens-table.component";
@@ -109,7 +109,11 @@ export default function Page() {
             </h4>
             <p className="text-lg mb-5">Thank you! Your leadership drives us all.</p>
             <h3 className="h4 mb-4 text-uppercase">Name of Organization</h3>
-            <OrganizationsTable className="mb-5"></OrganizationsTable>
+            <OrganizationsGrid className="mb-5">
+              <span>EarthDay.org</span>
+              <span>Climate Crisis Policy</span>
+              <span>Mona Foundation</span>
+            </OrganizationsGrid>
             <LogoGrid className="mb-5">
               <LogoGridItem src={"/org_logos/fridays-for-future-nyc.jpg"}>Fridays for Future NYC</LogoGridItem>
               <LogoGridItem src={"/org_logos/350_bk.png"}>350 Brooklyn</LogoGridItem>

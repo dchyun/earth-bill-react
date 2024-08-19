@@ -23,8 +23,8 @@ export default function CitizensTable ({
           </tr>
         </thead>
         <tbody>
-          {citizens.map(citizen => (
-            <tr key={citizen.last_name}>
+          {citizens.map((citizen, index) => (
+            <tr key={index}>
               <td>{citizen.first_name}</td>
               <td>{citizen.last_name}</td>
               <td>{citizen.district}</td>

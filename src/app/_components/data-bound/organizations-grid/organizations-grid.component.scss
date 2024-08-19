@@ -1,0 +1,32 @@
+@use "../../../_styles/foundation/variables" as *;
+@use "../../../_styles/theme/_theme-variables" as *;
+
+.orgs-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: $spacer-1;
+
+  span {
+    display: block;
+    align-self: start;
+    margin-bottom: $spacer-3;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    grid-template-columns: repeat(2, auto);
+
+    span {
+      margin-bottom: $spacer-3;
+      margin-right: $spacer-2;
+    }
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+    grid-template-columns: repeat(3, auto);
+
+    span {
+      margin-bottom: $spacer-5;
+    }
+  }
+}
