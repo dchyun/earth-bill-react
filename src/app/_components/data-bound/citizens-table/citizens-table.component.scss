@@ -1,0 +1,16 @@
+@use "../../../_styles/theme/_theme-variables" as *;
+
+.citizen-table-wrapper {
+  position: relative;
+  overflow: scroll;
+}
+
+.citizen-table-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 18px;
+  width: 100%;
+  background-color: $bg-neutral-lowest;
+  box-shadow: rgba(0,0,0,.1) 0px -9px 8px -2px;
+}

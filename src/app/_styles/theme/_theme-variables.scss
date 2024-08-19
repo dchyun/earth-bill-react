@@ -31,7 +31,9 @@ $gutters: (
   xl: 15vw
 );
 
-
+// Table
+$table-border-color: rgba(0,0,0,.2);
+$table-font-size: $font-size-sm;
 
 @forward "./tokens/t-animation";
 @forward "./tokens/t-borders";

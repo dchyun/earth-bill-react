@@ -1,15 +1,16 @@
 import Link from "next/link";
-import Button from "./_components/button/button.component";
-import TopNav from "./_components/top-nav/top-nav.component";
-import Footer from "./_components/footer/footer.component";
-import Section from "./_components/section/section.component";
-import Row from "./_components/row/row.component";
-import Column from "./_components/column/column.component";
-import LinkCard from "./_components/link-card/link-card.component";
-import { TopNavMenuItem } from "./_components/top-nav/top-nav.component";
-import OrganizationsTable from "./_components/organizations-table/organizations-table.component";
-import { LogoGridItem } from "./_components/logo-grid/logo-grid.component";
-import LogoGrid from "./_components/logo-grid/logo-grid.component";
+import Button from "./_components/shared/button/button.component";
+import TopNav from "./_components/shared/top-nav/top-nav.component";
+import Footer from "./_components/shared/footer/footer.component";
+import Section from "./_components/shared/section/section.component";
+import Row from "./_components/shared/row/row.component";
+import Column from "./_components/shared/column/column.component";
+import LinkCard from "./_components/shared/link-card/link-card.component";
+import { TopNavMenuItem } from "./_components/shared/top-nav/top-nav.component";
+import OrganizationsTable from "./_components/data-bound/organizations-table/organizations-table.component";
+import { LogoGridItem } from "./_components/shared/logo-grid/logo-grid.component";
+import LogoGrid from "./_components/shared/logo-grid/logo-grid.component";
+import CitizensTable from "./_components/data-bound/citizens-table/citizens-table.component";
 
 export default function Page() {
   return (
@@ -109,7 +110,7 @@ export default function Page() {
             <p className="text-lg mb-5">Thank you! Your leadership drives us all.</p>
             <h3 className="h4 mb-4 text-uppercase">Name of Organization</h3>
             <OrganizationsTable className="mb-5"></OrganizationsTable>
-            <LogoGrid className="mb-2">
+            <LogoGrid className="mb-5">
               <LogoGridItem src={"/org_logos/fridays-for-future-nyc.jpg"}>Fridays for Future NYC</LogoGridItem>
               <LogoGridItem src={"/org_logos/350_bk.png"}>350 Brooklyn</LogoGridItem>
               <LogoGridItem src={"/org_logos/350Chicago.jpg"}>350 Chicago</LogoGridItem>
@@ -172,6 +173,14 @@ export default function Page() {
               <LogoGridItem src={"/org_logos/WESPAC.jpeg"}>WESPAC Foundation</LogoGridItem>
               <LogoGridItem src={"/org_logos/WorkingFamiliesJoliet.jpg"} logoType="script">Working Families Joliet</LogoGridItem>
             </LogoGrid>
+            <h3 className="h4 mb-4 text-uppercase">Earth Activists</h3>
+            <CitizensTable></CitizensTable>
+            <h4 className="text-center">
+              <Link className="link-primary" target="_blank" href={'https://docs.google.com/document/d/1XEAeKQsKWqrzpYTeKLHOniJoi32s1mwuBWxp6mDNSZY/edit?usp=sharing'}>
+                See all our Groups & Earth Activists!
+                <span className="sr-only">opens in a new window</span>
+              </Link>
+            </h4>
           </Column>
         </Row>
       </Section>

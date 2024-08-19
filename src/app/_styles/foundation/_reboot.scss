@@ -100,3 +100,33 @@ p {
       z-index: 1020;
   }
 }
+
+// Tables
+.table {
+  width: 100%;
+  margin-bottom: $spacer;
+  color: $table-color;
+  font-size: $table-font-size;
+  background-color: transparent; // Reset for nesting within parents with `background-color`.
+  border-spacing: 0;
+
+  tr {
+    vertical-align: middle;
+  }
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+    text-align: left;
+    border-top: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+}

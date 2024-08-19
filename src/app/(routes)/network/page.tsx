@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../../_components/button/button.component";
+import Button from "../../_components/shared/button/button.component";
 
 export default function Page() {
   return (
