@@ -1,0 +1,26 @@
+// @use "../../../_styles/foundation/variables" as *;
+@use "../../../_styles/theme/_theme-variables" as *;
+
+.collapse {
+  &__panel {
+    &.collapsed {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    font-size: $font-size-base;
+    font-weight: 400;
+    color: $text-primary-xhigh;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+
+    &.link-light {
+      color: $text-priamry-low;
+    }
+  }
+}

@@ -102,6 +102,10 @@ p {
 }
 
 // Tables
+table {
+  border-collapse: collapse;
+}
+
 .table {
   width: 100%;
   margin-bottom: $spacer;

@@ -1,0 +1,21 @@
+@use "../tokens/t-colors" as *;
+
+.text-editor {
+  a,
+  a:visited {
+    font-weight: 600;
+    color: $text-primary-xhigh;
+    text-decoration: underline;
+  }
+}
+
+.text-editor-dark {
+  color: $text-neutral-lowest;
+
+  a,
+  a:visited {
+    font-weight: 600;
+    color: $text-priamry-low;
+    text-decoration: underline;
+  }
+}

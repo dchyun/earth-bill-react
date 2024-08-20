@@ -1,7 +1,13 @@
 type SectionProps = {
   children: any,
+  containerType?: 'default' | 'fluid',
   backgroundColor?: 'white' | 'black' | 'primary',
   textColor?: 'base' | 'white' | 'primary',
+}
+
+enum ContainerTypes {
+  default = 'container',
+  fluid = 'container-fluid',
 }
 
 enum SectionBackgroundColors {
@@ -18,9 +24,20 @@ enum SectionTextColors {
 
 export default function Section({
   children,
+  containerType,
   backgroundColor,
   textColor,
 }: SectionProps) {
+
+  function getContainerClass() {
+    switch(containerType) {
+      case 'fluid':
+        return ContainerTypes.fluid;
+      case 'default':
+      default:
+        return ContainerTypes.default;
+    }
+  }
 
   function getBackgroundColorClass() {
     switch(backgroundColor) {
@@ -48,7 +65,7 @@ export default function Section({
 
   return (
     <div className={'section ' + getBackgroundColorClass() + ' ' + getTextColorClass()}>
-      <div className='container'>
+      <div className={getContainerClass()}>
         {children}
       </div>
     </div>
