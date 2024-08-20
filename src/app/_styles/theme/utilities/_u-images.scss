@@ -1,3 +1,5 @@
+@use "../../foundation/variables" as *;
+
 // Images
 .img-cover {
   object-fit: cover;
@@ -14,5 +16,16 @@
 
   &__center {
     object-position: center;
+  }
+}
+
+// Image Grid
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    grid-template-columns: 1fr 1fr;
   }
 }
