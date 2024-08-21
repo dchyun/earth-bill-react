@@ -60,7 +60,7 @@ export default function Page() {
             </ul>
             <h2 className="mb-5 h3">Wonderful News: Huge Pollution Reductions from The Earth Bill</h2>
             <p className="text-lg"><strong>The Earth Bill will meet the USA Paris Commitments, reducing U.S. GHG emissions by an additional 40% by 2030, and 50% by 2050!</strong></p>
-            <img className="img-fluid py-4 col-12" src={"/chart.png"}/>
+            <img className="img-fluid py-4 col-12" src={"/chart.png"} loading="lazy"/>
             <p><strong>Experts from RegenIntel, previously with Project Drawdown, produced a report on GHG Reductions from the Earth Bill - with tremendous results!</strong></p>
             <p className="mb-5">
               <Link href="https://regenintel.earth/earthbill/" target="_blank">See Full Report<span className="sr-only">opens in a new window</span></Link>
@@ -132,7 +132,7 @@ export default function Page() {
         </Row>
         <Row>
           <Column baseWidth={12} desktopWidth={6} className="p-0">
-            <img className="img-cover" src={'/earth.jpg'}/>
+            <img className="img-cover" src={'/earth.jpg'} loading="lazy"/>
           </Column>
           <Column baseWidth={12} desktopWidth={6} className="p-5 text-editor-dark">
             <h2 className="h3 text-uppercase mb-4">Can we do this? Experts say yes. It's already happening - just not fast enough!</h2>

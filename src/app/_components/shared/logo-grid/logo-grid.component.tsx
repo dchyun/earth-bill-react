@@ -31,6 +31,6 @@ export function LogoGridItem({
   logoType = 'square',
 }: LogoGridItemProps) {
   return (
-    <img className={'logo-grid__logo' + (logoType === 'script' ? ' logo__script' : ' logo__square')} src={src} alt={children}/>
+    <img className={'logo-grid__logo' + (logoType === 'script' ? ' logo__script' : ' logo__square')} src={src} alt={children} loading='lazy'/>
   )
 }

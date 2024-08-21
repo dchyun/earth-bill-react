@@ -1,5 +1,6 @@
 type SectionProps = {
   children: any,
+  className?: string,
   containerType?: 'default' | 'fluid',
   backgroundColor?: 'white' | 'black' | 'primary',
   textColor?: 'base' | 'white' | 'primary',
@@ -24,6 +25,7 @@ enum SectionTextColors {
 
 export default function Section({
   children,
+  className,
   containerType,
   backgroundColor,
   textColor,
@@ -64,7 +66,7 @@ export default function Section({
   }
 
   return (
-    <div className={'section ' + getBackgroundColorClass() + ' ' + getTextColorClass()}>
+    <div className={'section ' + (className ? className + ' ' : '') + getBackgroundColorClass() + ' ' + getTextColorClass()}>
       <div className={getContainerClass()}>
         {children}
       </div>

@@ -6,8 +6,8 @@
   border-radius: $border-radius-xl;
   padding: $spacer-3 $spacer-7;
   font-size: $h6-font-size;
-  font-weight: 700;
-  text-decoration: none;
+  font-weight: 700 !important;
+  text-decoration: none !important;
   text-align: center;
   transition: $animation-duration-1 $animation-easing-ease-in-out;
 
@@ -19,24 +19,24 @@
 }
 
 .btn-pill {
-  background-color: $bg-primary-high;
-  color: $text-neutral-lowest;
+  background-color: $bg-primary-high !important;
+  color: $text-neutral-lowest !important;
 
   &:hover,
   &:focus {
-    background-color: $bg-primary-high;
-    color: $text-neutral-lowest;
+    background-color: $bg-primary-high !important;
+    color: $text-neutral-lowest !important;
   }
 }
 
 .btn-pill-light {
-  background-color: $gray-100;
-  color: $text-primary-xhigh;
+  background-color: $gray-100 !important;
+  color: $text-primary-xhigh !important;
 
   &:hover,
   &:focus {
-    background-color: $gray-100;
-    color: $text-primary-xhigh;
+    background-color: $gray-100 !important;
+    color: $text-primary-xhigh !important;
   }
 }
 
