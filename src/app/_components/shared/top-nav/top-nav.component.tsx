@@ -22,7 +22,7 @@ export default function TopNav({
     <div className="w-100 sticky-top header-wrapper">
       <div className="row header bg-primary-high text-white py-3 px-4">
         <div className="col-12 header__col">
-          <a href="https://earthbill.org" className="header__icon">
+          <a href={'/'} className="header__icon">
             <picture>
               <source srcSet={'/logo-transparent.png'} media="(min-width: 576px)"/>
               <img src={'/logo-transparent.png'} alt=""/>
